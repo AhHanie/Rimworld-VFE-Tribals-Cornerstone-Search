@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -24,13 +24,11 @@ namespace VFETribalsSearch
             Log.Warning(Prefix + message);
         }
 
-        [Conditional("DEBUG")]
         public static void Error(string message)
         {
             Log.Error(Prefix + message);
         }
 
-        [Conditional("DEBUG")]
         public static void Exception(Exception exception, string context = null)
         {
             if (exception == null)
